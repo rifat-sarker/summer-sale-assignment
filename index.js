@@ -13,5 +13,20 @@ function handleClickOnCards(target){
 
     const firstTotal = document.getElementById('total-price');
     firstTotal.innerText = total;
+
+   
+    
 }
+document.getElementById('input-field').addEventListener('keyup', function(event){
+    const text = event.target.value;
+    const applyButton = document.getElementById('apply-button');
+    if( text === 'SELL200'){
+        applyButton.removeAttribute('disabled');
+    }
+    else{
+        applyButton.setAttribute('disabled', true);
+    }
+    
+})
+
 
