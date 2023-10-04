@@ -55,9 +55,9 @@
     <main>
         <section class="">
             <h2 class="text-4xl font-semibold mt-4">Kitchenware</h2>
-            <div class="flex flex-col lg:flex-row gap-9 justify-center items-center">
-                <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
-                    <div class="card max-w-96  bg-base-100 shadow-xl text-center">
+            <div class="flex flex-col lg:flex-row gap-9 justify-center">
+                <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 justify-center">
+                    <div onclick="handleClickOnCards(this)"  class=" card w-96 bg-base-100 shadow-xl text-center">
                         <figure><img class="px-24 py-4 rounded-lg m-4 bg-base-300 " src="/images/prod1.png" alt="" />
                         </figure>
                         <div class="rating m-auto">
@@ -67,12 +67,12 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <div onclick="handleClickOnCards(this)" class="card-body">
+                        <div class="card-body">
                             <h2 class="card-title m-auto">K. Accessories!</h2>
                             <p id="accessories-price">39.00 TK</p>
                         </div>
                     </div>
-                    <div class="card max-w-96  bg-base-100 shadow-xl text-center ">
+                    <div onclick="handleClickOnCards(this)" class="card w-96  bg-base-100 shadow-xl text-center ">
                         <figure><img class="px-24 py-4 rounded-lg m-4 bg-base-300 " src="/images/prod2.png" alt="" />
                         </figure>
                         <div class="rating m-auto">
@@ -82,12 +82,12 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <div onclick="handleClickOnCards(this)" class="card-body">
+                        <div class="card-body">
                             <h2 class="card-title m-auto">K. Accessories!</h2>
                             <p>25.00 TK</p>
                         </div>
                     </div>
-                    <div class="card max-w-96  bg-base-100 shadow-xl text-center ">
+                    <div onclick="handleClickOnCards(this)" class="card w-96 bg-base-100 shadow-xl text-center ">
                         <figure><img class="px-24 py-4 rounded-lg m-4 bg-base-300 " src="/images/prod3.png" alt="" />
                         </figure>
                         <div class="rating m-auto">
@@ -97,14 +97,14 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <div onclick="handleClickOnCards(this)" class="card-body">
+                        <div class="card-body">
                             <h2 class="card-title m-auto">Home Cooker</h2>
                             <p>49.00 TK</p>
                         </div>
                     </div>
 
                 </div>
-                <div class="rounded-lg h-[150px] w-[350px] pl-16">
+                <div class="rounded-lg ml-12">
                     <h3>Have coupon?</h3>
                     <input id="input-field" class="rounded-lg py-1 px-3" type='text' name=""
                         placeholder="Coupon Code"><br><br>
@@ -115,7 +115,7 @@
             <h2 class="text-4xl font-semibold mt-4">Sportswear</h2>
             <div class="flex flex-col lg:flex-row gap-9 justify-center">
                 <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="card w-96  bg-base-100 shadow-xl text-center ">
+                    <div onclick="handleClickOnCards(this)"  class="card w-96  bg-base-100 shadow-xl text-center ">
                         <figure><img class="px-24 py-4 rounded-lg m-4 bg-base-300 " src="/images/prod4.png" alt="" />
                         </figure>
                         <div class="rating m-auto">
@@ -125,12 +125,12 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <div onclick="handleClickOnCards(this)" class="card-body">
+                        <div class="card-body">
                             <h2 class="card-title m-auto">Sports Back Cap</h2>
                             <p>49.00 TK</p>
                         </div>
                     </div>
-                    <div class="card w-96  bg-base-100 shadow-xl text-center ">
+                    <div onclick="handleClickOnCards(this)" class="card w-96  bg-base-100 shadow-xl text-center ">
                         <figure><img class="px-24 py-4 rounded-lg m-4 bg-base-300 " src="/images/prod5.png" alt="" />
                         </figure>
                         <div class="rating m-auto">
@@ -140,12 +140,12 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <div onclick="handleClickOnCards(this)" class="card-body">
+                        <div  class="card-body">
                             <h2 class="card-title m-auto">Full Jersey Set</h2>
                             <p>69.00 TK</p>
                         </div>
                     </div>
-                    <div class="card w-96  bg-base-100 shadow-xl text-center ">
+                    <div onclick="handleClickOnCards(this)" class="card w-96  bg-base-100 shadow-xl text-center ">
                         <figure><img class="px-24 py-4 rounded-lg m-4 bg-base-300 " src="/images/prod6.png" alt="" />
                         </figure>
                         <div class="rating m-auto">
@@ -155,7 +155,7 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <div onclick="handleClickOnCards(this)" class="card-body">
+                        <div  class="card-body">
                             <h2 class="card-title m-auto">Sports cates</h2>
                             <p>159.00 TK</p>
                         </div>
@@ -179,7 +179,7 @@
                             <img class="m-auto" src="images/congo.png" alt="">
                             <h2 class="text-4xl font-semibold">Congratulations</h2>
                             <p class="py-3">Your Purchase the product</p>
-                            <button class="btn common-btn-color font-semibold w-3/4">Go Home</button>
+                            <button id="resetAndGoHomeButton" class="btn common-btn-color font-semibold w-3/4">Go Home</button>
                         </div>
                     </dialog>
                 </div>
